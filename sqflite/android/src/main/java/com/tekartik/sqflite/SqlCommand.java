@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.requery.android.database.sqlite.SQLiteQuery;
+
 public class SqlCommand {
     final private String sql;
     final private List<Object> rawArguments;
@@ -51,7 +53,7 @@ public class SqlCommand {
         return fixedArguments.toArray(new Object[0]);
     }
 
-    public void bindTo(SQLiteProgram statement) {
+    public void bindTo(SQLiteQuery statement) {
         if (rawArguments != null) {
             int count = rawArguments.size();
             for (int i = 0; i < count; i++) {

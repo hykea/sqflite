@@ -24,7 +24,7 @@ import android.database.Cursor;
 import io.requery.android.database.DatabaseErrorHandler;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteCantOpenDatabaseException;
-import android.database.sqlite.SQLiteCursor;
+import io.requery.android.database.sqlite.SQLiteCursor;
 import io.requery.android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.util.Log;
